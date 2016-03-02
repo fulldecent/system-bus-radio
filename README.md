@@ -10,13 +10,31 @@ Publicly available documents already discuss exfiltration from secured systems u
 
 How to Use It
 ------------------
-Compile the problem using:
+You need a decent C++11 implementation(GCC or Clang)
+Compile the program by make:
 
-    gcc main.c -Wall -O2 -o main
+If you have GCC:
 
-And run it on an Apple MacBook Air (13-inch, Early 2015):
+    make gmain
 
-    ./main
+If you have Clang:
+
+    make cmain
+
+If you have both:
+
+    make
+
+And run it on your computer:
+
+For GCC:
+
+    make grun
+
+For Clang:
+
+    make crun
+
 
 Then use a Sony STR-K670P radio receiver with the included antenna and tune it to 1580 kHz on AM.
 
