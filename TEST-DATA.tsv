@@ -29,3 +29,4 @@ Date	Tester	Transmitter	Receiver	Software	Frequency	Result	Recording
 2016-03-02	Trevor Summerfield	MacBook Pro (Retina, 15-inch, Mid 2015)	Grundig G8 Traveler II Digital, Internal AM Antenna	_mm_stream_si128	1580 kHz	8” above keyboard 50dbu signal, 0db SNR, audible	
 2016-03-05	Alessio Gerace	MacBookPro Retina (13-inch, 2014)	Majestic TT34CD/TP/USB	_mm_stream_si128	~1610 kHz	10/30 cm	
 2016-03-05	Quan Yang	MacBookPro Retina (Late 2013)	AR1741 Multiband Receiver	Javascript	1560 khz	0.5m, more frequencies usable if charging	https://youtu.be/6tM4EKUYogI
+2016-03-07	Gabriel Tremblay	Clone PC - full tower	NAXA nr-721	internal antena	nanosleep mod	~1560 khz	10 inches	Running in a ubuntu VM in a multiple-vm ESX machine
