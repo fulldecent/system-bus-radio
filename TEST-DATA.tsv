@@ -30,3 +30,4 @@ Date	Tester	Transmitter	Receiver	Software	Frequency	Result	Recording
 2016-03-05	Alessio Gerace	MacBookPro Retina (13-inch, 2014)	Majestic TT34CD/TP/USB	_mm_stream_si128	~1610 kHz	10/30 cm	
 2016-03-05	Quan Yang	MacBookPro Retina (Late 2013)	AR1741 Multiband Receiver	Javascript	1560 khz	0.5m, more frequencies usable if charging	https://youtu.be/6tM4EKUYogI
 2016-03-07	Mehdi Asgari	MacBook Pro Retina (13-inch, 2015)	Tecsun PL680, internal whip antenna	_mm_stream_si128	1610 kHz	90cm	
+2016-03-26  Maksym Zaistev  Dell LATTITUDE 3340 (DDR3L 1600MHz RAM and Intel i5-4200U)  Panasonic RQ-V60  C&T ~1100 kHz 2m of air, 1m of wall and 0.5m of steel https://youtu.be/Tadg509p7yw
