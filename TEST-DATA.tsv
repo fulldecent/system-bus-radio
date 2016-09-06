@@ -31,4 +31,4 @@ Date	Tester	Transmitter	Receiver	Software	Frequency	Result	Recording
 2016-03-05	Quan Yang	MacBookPro Retina (Late 2013)	AR1741 Multiband Receiver	Javascript	1560 khz	0.5m, more frequencies usable if charging	https://youtu.be/6tM4EKUYogI
 2016-03-07	Mehdi Asgari	MacBook Pro Retina (13-inch, 2015)	Tecsun PL680, internal whip antenna	_mm_stream_si128	1610 kHz	90cm	
 2016-03-10	Gabriel Tremblay	Cooler Master HAF 912, ASUS M5A97, AMD FX-8120, Corsair Vengeance 32GB	Not known	PR #12	~1550 kHz	~20-30cm	
-2016-09-05  Chris Rochford  Macbook Pro Retina (13-inch, 2015)  Yamaha HTR-5730, loop antenna Javascript  1580 kHz  6 inches
+2016-09-05  Chris Rochford  Macbook Pro Retina (13-inch, 2015)  Yamaha HTR-5730, loop antenna  Javascript  1580 kHz  6 inches    
