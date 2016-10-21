@@ -9,8 +9,10 @@ function now() {
 var NSEC_PER_SEC = 1000000000;
 var register = 3.1415
 
+var logs = document.getElementById('logs');
+
 function square_am_signal(time,freq) {
-    document.getElementById('logs').value += "Playing / "+time+" seconds / "+freq+"Hz\n";
+    logs.value += "Playing / "+time+" seconds / "+freq+"Hz\n";
     var period = NSEC_PER_SEC/freq;
     var start = now();
     var end = now()+time*NSEC_PER_SEC;
