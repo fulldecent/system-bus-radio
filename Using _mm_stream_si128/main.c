@@ -55,7 +55,7 @@ static inline void square_am_signal(float time, float frequency) {
     uint64_t period = NSEC_PER_SEC / frequency;
 
     uint64_t start = mach_absolute_time();
-    uint64_t end = start + time * NSEC_PER_SEC;
+    uint64_t end = start + (uint64_t)(time * NSEC_PER_SEC);
 
     while (mach_absolute_time() < end) {
         uint64_t mid = start + period / 2;
