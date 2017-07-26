@@ -23,6 +23,7 @@ Date	Tester	Transmitter	Receiver	Software	Frequency	Result	Recording
 2016-03-02	Nipun Gunawardena	MacBook Pro Retina (13-inch, Late 2013)	Onkyo CR305TX, Loop antenna	_mm_stream_si128	1610 kHz	85cm	Other frequencies also usable when very close
 2016-03-02	Masahiko Uota	MacBook Pro 2.8GHz i7 15-inch Mid 2014	Sony ICF-T46, no antenna	_mm_stream_si128	1300 kHz, 900 kHz	6 inches	https://twitter.com/muota_here/status/704924596802342913
 2016-03-02	Yuji Fujita	Thinkpad X200	Sony ICF-SW100	PR #12	1363 kHz	0.5m	https://youtu.be/li9hHM4NkWA
+2017-07-25	Ernesto Sanchez	Lenovo Thinkpad X201	INDIN BC-R28	master	1600 kHz	0.3m  
 2016-03-02	Redgar Nord	HP ProBook 4340s, Linux	Sharp radio, whip antenna	PR #12	~1590 kHz	"6-7"", very orientation dependent"	
 2016-03-02	Redgar Nord	RaspberryPi, Linux	Sharp radio, whip antenna	PR #12	~1590 kHz	No signal at all	
 2016-03-02	Erin Pinheiro	Acer Aspire E1-572-6 BR691	Generic AM radio, retractable antenna	PR #12	~1590 kHz	10-20cm Slightly noisy	https://dl.dropboxusercontent.com/u/9435923/code/audio_2016-03-02_18-24-30.ogg
