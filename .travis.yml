@@ -1,0 +1,3 @@
+before_install: chmod +x check-tabs.sh
+install: true
+script: ./check-tabs.sh
