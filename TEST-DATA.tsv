@@ -35,4 +35,4 @@ Date	Tester	Transmitter	Receiver	Software	Frequency	Result	Recording
 2016-09-05	Chris Rochford	Macbook Pro Retina (13-inch, 2015)	Yamaha HTR-5730, loop antenna	Javascript	1580 kHz	6 inches	
 2016-10-13	John Sampson	MacBook Pro Retina (15-inch, Mid 2014)	Sony ICFCS15IPN (stock antenna)	_mm_stream_si128	~1560 kHz	5 inches	   
 2018-01-24	Philipp Hanslovsky	Lenovo X1 Carbon (14-inch, 2014)	Yamaha RX-V675, Loop antenna	_mm_stream_si128 @ 03c3689	1590 kHz, 1600kHz	5 inches	   
-2018-01-24	Fabian Briese	Dell Inspiron 17 7000 (7737)	Yamaha RX-V675, Loop antenna	Webbrowser (Chrome)	1560 Hz	125-125cm	   
+2018-01-24	Fabian Briese	Dell Inspiron 17 7000 (7737)	Yamaha RX-V675, Loop antenna	Webbrowser (Chrome)	1560 Hz	125-150cm	   
