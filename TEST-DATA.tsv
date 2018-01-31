@@ -16,7 +16,7 @@ Date	Tester	Transmitter	Receiver	Software	Frequency	Result	Recording
 2016-03-02	Ryou Ezoe	Acer ASPIRE 5750, GNU/Linux	Tecsun PL-310 fm/am Stereo World Band Dsp Receiver, internal antenna	PR #12	1440 kHz	30cm	 
 2016-03-02	Yuval Adam	MacBook Pro (13-inch, Mid-2010)	HackRF, 125Mhz upconverter, random wire antenna	_mm_stream_si128	1580 kHz	No discernible signal	 
 2016-03-02	Kyohei Takahashi	MacBook Pro (Retina, 13-inch, Late 2012)	KOIZUMI SAD-7701-R AM mode	_mm_stream_si128	500 kHz – 1400 kHz	30cm	https://youtu.be/RJlOnoK5WpQ
-2016-03-02	David Haberthür	MacBook Pro "Core i7" 2.4 15"" Late 2011	Sony CFD-S38L	_mm_stream_si128	1584 kHz	6cm	 
+2016-03-02	David Haberthür	"MacBook Pro Core i7 2.4 15"" Late 2011"	Sony CFD-S38L	_mm_stream_si128	1584 kHz	6cm	 
 2016-03-02	Jeremy Zerfas	MacBook Pro (15-inch, Mid 2012) 2.3	Sony CFS-201 boom-box, internal antenna	_mm_stream_si128	Various AM channels	6'	 
 2016-03-02	Jeremy Zerfas	MacBook Pro (15-inch, Early 2008) 2.4	Yamaha RX-V675, Loop antenna	nanosleep mod	Various AM channels	7', definitely farther than Mid 2012 model w/ same rcvr	 
 2016-03-02	Jeremy Zerfas	Athlon II X2 240, Gigabyte GA-MA785GM-US2H, Antec FusionRemote 350	Yamaha RX-V675, Loop antenna	PR #12	Various AM channels	"6"" from the processor"	 
