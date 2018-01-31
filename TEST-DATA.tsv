@@ -1,7 +1,7 @@
 Date	Tester	Transmitter	Receiver	Software	Frequency	Result	Recording
 2016-03-01	William Entriken	MacBook Air (13-inch, Early 2015)	Sony STR-K670P, stock antenna	_mm_stream_si128	1580 kHz	2m thru air, 1m thru drywall	https://youtu.be/caGPmyMLYUI
-2016-03-01	Scott Buchanan	MacBook Pro Retina 15"", early 2013	N/A	_mm_stream_si128		?m audible	https://goo.gl/ll3PxH
-2016-03-01	Samuel Steele	MacBook Air (13-inch, Mid-2013)	Onkyo HT-R550, JVC Loop antenna	_mm_stream_si128	1580 kHz	2"", noisy by 6	 
+2016-03-01	Scott Buchanan	"MacBook Pro Retina 15"", early 2013"	N/A	_mm_stream_si128		?m audible	https://goo.gl/ll3PxH
+2016-03-01	Samuel Steele	MacBook Air (13-inch, Mid-2013)	Onkyo HT-R550, JVC Loop antenna	_mm_stream_si128	1580 kHz	"2"", noisy by 6"	 
 2016-03-01	Chris Smolinski	MBP (??-inch, 2010)	netSDR, ??? antenna	_mm_stream_si128	Entire AM band	No signal found	 
 2016-03-01	Chris Smolinski	iMac (??-inch, 2015)	netSDR, ??? antenna	_mm_stream_si128	Entire AM band	No signal found	 
 2016-03-01	Chris Smolinski	MBP (??-inch, 2010)	Sony 7600G, no antenna	_mm_stream_si128	1580 kHz, Long wave	4	https://youtu.be/l8AYHnF8ZrA
@@ -10,8 +10,8 @@ Date	Tester	Transmitter	Receiver	Software	Frequency	Result	Recording
 2016-03-01	Elvis Pfutzenreuter	MacBook (12-inch, Early 2015)	Sony ICF-SW11, internal antenna	_mm_stream_si128	1580 kHz	2m, recommends turning off mains & light	 
 2016-03-01	somini	Asus X201E, Linux	Clock radio, internal antenna	_mm_stream_si128	1580 kHz	4	https://youtu.be/Nroc2BtO6NU
 2016-03-01	janka102	MacBook Pro (15-inch, Early 2011)	iHome iP90, included AM antenna	_mm_stream_si128	1580 kHz	8	https://youtu.be/qN9D3bxkbXk
-2016-03-01	Ryan Faerman	MacBook Air (11-inch, 2014)	Grundid Traveler 2 Digital, internal antenna	_mm_stream_si128	1600 kHz	6""-8	 
-2016-03-02	Tomi Salmi	Mac mini (Late 2014)	Sharp stereo cassette recorder WQ-T282H(GR), tele antenna	_mm_stream_si128	1580 kHz	4"" noisy	 
+2016-03-01	Ryan Faerman	MacBook Air (11-inch, 2014)	Grundid Traveler 2 Digital, internal antenna	_mm_stream_si128	1600 kHz	"6""-8"	 
+2016-03-02	Tomi Salmi	Mac mini (Late 2014)	Sharp stereo cassette recorder WQ-T282H(GR), tele antenna	_mm_stream_si128	1580 kHz	"4"" noisy"	 
 2016-03-02	Fe Yi	MacBook Pro (13-inch, Early 2015)	TECSUN PL-310ET, internal antenna	_mm_stream_si128	1580 kHz	~10cm above keyboard	 
 2016-03-02	Ryou Ezoe	Acer ASPIRE 5750, GNU/Linux	Tecsun PL-310 fm/am Stereo World Band Dsp Receiver, internal antenna	PR #12	1440 kHz	30cm	 
 2016-03-02	Yuval Adam	MacBook Pro (13-inch, Mid-2010)	HackRF, 125Mhz upconverter, random wire antenna	_mm_stream_si128	1580 kHz	No discernible signal	 
@@ -19,12 +19,12 @@ Date	Tester	Transmitter	Receiver	Software	Frequency	Result	Recording
 2016-03-02	David Haberthür	MacBook Pro "Core i7" 2.4 15"" Late 2011	Sony CFD-S38L	_mm_stream_si128	1584 kHz	6cm	 
 2016-03-02	Jeremy Zerfas	MacBook Pro (15-inch, Mid 2012) 2.3	Sony CFS-201 boom-box, internal antenna	_mm_stream_si128	Various AM channels	6'	 
 2016-03-02	Jeremy Zerfas	MacBook Pro (15-inch, Early 2008) 2.4	Yamaha RX-V675, Loop antenna	nanosleep mod	Various AM channels	7', definitely farther than Mid 2012 model w/ same rcvr	 
-2016-03-02	Jeremy Zerfas	Athlon II X2 240, Gigabyte GA-MA785GM-US2H, Antec FusionRemote 350	Yamaha RX-V675, Loop antenna	PR #12	Various AM channels	6"" from the processor	 
+2016-03-02	Jeremy Zerfas	Athlon II X2 240, Gigabyte GA-MA785GM-US2H, Antec FusionRemote 350	Yamaha RX-V675, Loop antenna	PR #12	Various AM channels	"6"" from the processor"	 
 2016-03-02	Nipun Gunawardena	MacBook Pro Retina (13-inch, Late 2013)	Onkyo CR305TX, Loop antenna	_mm_stream_si128	1610 kHz	85cm	Other frequencies also usable when very close
 2016-03-02	Masahiko Uota	MacBook Pro 2.8GHz i7 15-inch Mid 2014	Sony ICF-T46, no antenna	_mm_stream_si128	1300 kHz, 900 kHz	6 inches	https://twitter.com/muota_here/status/704924596802342913
 2016-03-02	Yuji Fujita	Thinkpad X200	Sony ICF-SW100	PR #12	1363 kHz	0.5m	https://youtu.be/li9hHM4NkWA
 2017-07-25	Ernesto Sanchez	Lenovo Thinkpad X201	INDIN BC-R28	master	1600 kHz	0.3m	None
-2016-03-02	Redgar Nord	HP ProBook 4340s, Linux	Sharp radio, whip antenna	PR #12	~1590 kHz	6-7"", very orientation dependent	 
+2016-03-02	Redgar Nord	HP ProBook 4340s, Linux	Sharp radio, whip antenna	PR #12	~1590 kHz	"6-7"", very orientation dependent"	 
 2016-03-02	Redgar Nord	RaspberryPi, Linux	Sharp radio, whip antenna	PR #12	~1590 kHz	No signal at all	 
 2016-03-02	Erin Pinheiro	Acer Aspire E1-572-6 BR691	Generic AM radio, retractable antenna	PR #12	~1590 kHz	10-20cm Slightly noisy	https://dl.dropboxusercontent.com/u/9435923/code/audio_2016-03-02_18-24-30.ogg
 2016-03-02	Trevor Summerfield	MacBook Pro (Retina, 15-inch, Mid 2015)	Grundig G8 Traveler II Digital, Internal AM Antenna	_mm_stream_si128	1580 kHz	8” above keyboard 50dbu signal, 0db SNR, audible	 
