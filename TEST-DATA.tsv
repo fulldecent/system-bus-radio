@@ -37,3 +37,4 @@ Date	Tester	Transmitter	Receiver	Software	Frequency	Result	Recording
 2018-01-24	Philipp Hanslovsky	Lenovo X1 Carbon (14-inch, 2014)	Yamaha RX-V675, Loop antenna	_mm_stream_si128 @ 03c3689	1590 kHz, 1600kHz	5 inches	 
 2018-01-24	Fabian Briese	Dell Inspiron 17 7000 (7737)	Tevion Compact Disk Player	Webbrowser (Chrome)	1560 kHz	125-150cm	 
 2018-01-30	Troy Giorshev	MacBook Air (13-inch, Early 2014)	Eton Mini 300	_mm_stream_si128	1535 kHz	30cm	 
+2020-12-17  Steven Shim MacBook Pro M1 (13-inch, 2020) Sony AM/FM Clock Radio _mm_stream_si128 1560kHz 2-3 inches from bottom right of trackpad
