@@ -16,7 +16,7 @@ function start() { // Start Web Worker & send song data to player
 		};
 
 		// Send song data to player
-		var song = document.getElementById("tune").innerHTML;
+		var song = document.getElementById("tune").value;
 		player.postMessage(song);
 	}
 }
