@@ -39,3 +39,4 @@ Date	Tester	Transmitter	Receiver	Software	Frequency	Result	Recording
 2018-01-30	Troy Giorshev	MacBook Air (13-inch, Early 2014)	Eton Mini 300	_mm_stream_si128	1535 kHz	30cm	 
 2020-12-17	Steven Shim	MacBook Pro M1 (13-inch, 2020)	Sony AM/FM Clock Radio	_mm_stream_si128	1560kHz	2-3 inches from bottom right of trackpad	
 2022-02-01	Ilya Semichastnov	MacBook Pro (16-inch, 2019)	Yaesu FT-817	_mm_stream_si128	1530kHz	wire antenna 50cm below the laptop	
+2024-01-03	Christian Mürtz	MacBook Pro Late 2016	NORDMENDE - Compact Recorder 5043 K	_mm_stream_si128	1550 kHz	~30cm	https://www.youtube.com/watch?v=jUKchOM_TjM
