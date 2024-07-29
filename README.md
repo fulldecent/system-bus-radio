@@ -31,6 +31,8 @@ You should hear the "Mary Had a Little Lamb" tune playing repeatedly. Other equi
 
 Are you using an antenna? At the beginning, the author placed the antenna directly on top of the number 4 key and that worked best (on any AM frequency). It was a round antenna. Then once they knew it worked they moved the antenna back. Moving it back reduced the number of frequencies that it worked on, and eventually only that one (1580 kHz) worked. Different hardware will certainly have different frequency response. Here are some results that have been sent in by readers. Please mail github.com@phor.net with your results (including makes and models of all equipment involved) or [edit this file directly](https://github.com/fulldecent/system-bus-radio/edit/master/TEST-DATA.tsv) and create a pull request.
 
+**WANTED:** Please post your test results using Raspberry Pi and other embedded systems. This may be particularly good targets because of less shielding/hardening of their hardware.
+
 **NEW:** See our [basic RTL SDR guide] to receive system bus signals using another computer with RTL SDR hardware.
 
 Technical explanation
