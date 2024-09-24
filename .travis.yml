@@ -1,3 +1,0 @@
-before_install: chmod +x tests/check-lines.sh
-install: true
-script: ./tests/check-lines.sh
