@@ -14,7 +14,7 @@ jobs:
 
     steps:
       - name: Checkout repository
-        uses: actions/checkout@v3
+        uses: actions/checkout@v4
 
       - name: Run check-lines.sh script
-        run: ./tests/check-lines.sh
+        run: ./tests/check-test-data-tabs.sh
