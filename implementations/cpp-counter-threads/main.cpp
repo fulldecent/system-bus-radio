@@ -32,7 +32,7 @@ void boost_song() {
     }
 }
 
-void square_am_signal(float time, float frequency) {
+void square_am_signal(float frequency, float time) {
     using namespace std::chrono;
     std::cout << "Playing / " << time << " seconds / " << frequency << " Hz\n";
 
@@ -77,12 +77,12 @@ int main(int argc, char* argv[]) {
     }
 
     char buffer[64] = {0}; // Buffer for reading lines from file
-    int time_ms;
     int freq_hz;
+    int time_ms;
 
     while (true) {
         if (fgets(buffer, sizeof(buffer) - 1, fp)) {
-            if (sscanf(buffer, "%d %d", &time_ms, &freq_hz) == 2) {
+            if (sscanf(buffer, "%d %d", &freq_hz, &time_ms) == 2) {
                 square_am_signal(1.0 * time_ms / 1000, freq_hz); // Convert ms to seconds
             }
         }

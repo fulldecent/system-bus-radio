@@ -53,7 +53,7 @@ void perform_high_bus_activity(void) {
     }
 }
 
-static inline void square_am_signal(uint64_t time_ms, uint64_t freq_hz) {
+static inline void square_am_signal(uint64_t freq_hz, uint64_t time_ms) {
     uint64_t start = mach_absolute_time();
     uint64_t end = start + time_ms * 1000000 * timebase_info.denom / timebase_info.numer;
 
@@ -100,7 +100,7 @@ int main(int argc, char* argv[]) {
     }
 
     char buffer[64];
-    int time_ms, freq_hz;
+    int freq_hz, time_ms;
 
     while (1) {
         if (!fgets(buffer, sizeof(buffer), fp)) {
@@ -113,8 +113,8 @@ int main(int argc, char* argv[]) {
             }
         }
 
-        if (sscanf(buffer, "%d %d", &time_ms, &freq_hz) == 2) {
-            square_am_signal(time_ms, freq_hz);
+        if (sscanf(buffer, "%d %d", &freq_hz, &time_ms) == 2) {
+            square_am_signal(freq_hz, time_ms);
         }
     }
 

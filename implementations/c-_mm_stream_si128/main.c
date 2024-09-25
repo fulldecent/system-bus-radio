@@ -50,7 +50,7 @@ __m128i reg_one;
 mach_port_t clock_port;
 mach_timespec_t remain;
 
-static inline void square_am_signal(float time, float frequency) {
+static inline void square_am_signal(float frequency, float time) {
     printf("Playing / %0.3f seconds / %4.0f Hz\n", time, frequency);
     uint64_t period = NSEC_PER_SEC / frequency;
 
@@ -94,11 +94,11 @@ int main(int argc, char* argv[])
     }
 
     char buffer[20] = {0};
-    int time_ms;
     int freq_hz;
+    int time_ms;
     while (1) {
         fgets(buffer, 20 - 1, fp);
-        if (sscanf(buffer, "%d %d",  &time_ms, &freq_hz) == 2) {
+        if (sscanf(buffer, "%d %d", &freq_hz, &time_ms) == 2) {
             square_am_signal(1.0 * time_ms / 1000, freq_hz);
         }
         if (feof(fp)) {
