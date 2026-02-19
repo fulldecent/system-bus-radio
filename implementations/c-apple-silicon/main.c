@@ -1,4 +1,4 @@
-// SYSTEM BUS RADIO - M1 PULSE-PACKET (CUSTOM BARRIER)
+// SYSTEM BUS RADIO - M1 PULSE-PACKET TRANSMITTER (4 CORES)
 #include <stdio.h>
 #include <stdlib.h>
 #include <stdint.h>
@@ -20,11 +20,11 @@ uint8_t *g_mem;
 static mach_timebase_info_data_t timebase_info;
 volatile int g_running = 1;
 
-// 共有パラメータ
+// Shared Parameters
 volatile uint64_t g_current_freq = 0;
 volatile uint64_t g_current_duration_ms = 0;
 
-// 自作バリア構造体
+// Custom Barrier Structure
 typedef struct {
     pthread_mutex_t mutex;
     pthread_cond_t cond;
@@ -61,12 +61,12 @@ void barrier_wait(my_barrier_t *b) {
 }
 
 static inline void bus_poke(size_t offset) {
-    uint64_t v1 = 0x5555555555555555ull;
-    uint64_t v2 = 0xAAAAAAAAAAAAAAAAull;
+    // Write 0xFFFFFFFFFFFFFFFF to the bus
+    uint64_t val = 0xFFFFFFFFFFFFFFFFull;
     asm volatile (
-        "stnp %0, %1, [%2]\n" "stnp %1, %0, [%2, #16]\n"
-        "stnp %0, %1, [%2, #32]\n" "stnp %1, %0, [%2, #48]\n"
-        : : "r"(v1), "r"(v2), "r"(&g_mem[offset]) : "memory"
+        "stnp %0, %0, [%1]\n" "stnp %0, %0, [%1, #16]\n"
+        "stnp %0, %0, [%1, #32]\n" "stnp %0, %0, [%1, #48]\n"
+        : : "r"(val), "r"(&g_mem[offset]) : "memory"
     );
 }
 
@@ -87,7 +87,7 @@ void* worker_thread(void* arg) {
     size_t current = offset;
 
     while (g_running) {
-        // 1. 開始合図待ち
+        // 1. Wait for start signal
         barrier_wait(&g_barrier_start);
         if (!g_running) break;
 
@@ -103,14 +103,14 @@ void* worker_thread(void* arg) {
             uint64_t now = start;
             while (now < end) {
                 uint64_t next_edge = now + half_period;
-                // ON
+                // ON Phase
                 while (mach_absolute_time() < next_edge) {
                     bus_poke(current);
                     current += 64;
                     if (current >= end_offset) current = offset;
                 }
                 next_edge += half_period;
-                // OFF
+                // OFF Phase
                 while (mach_absolute_time() < next_edge) {
                     asm volatile("yield");
                 }
@@ -118,7 +118,7 @@ void* worker_thread(void* arg) {
             }
         }
 
-        // 2. 終了報告
+        // 2. Report completion
         barrier_wait(&g_barrier_end);
     }
     return NULL;
@@ -138,7 +138,7 @@ void play_tone(uint64_t freq_hz, uint64_t time_ms) {
         // END WAIT
         barrier_wait(&g_barrier_end);
         
-        // 短い休憩 (0.5ms)
+        // Short pause (0.5ms) to reset throttling counters
         struct timespec ts = {0, 500000};
         nanosleep(&ts, NULL);
         
@@ -189,7 +189,7 @@ int main(int argc, char* argv[]) {
     }
 
     g_running = 0;
-    barrier_wait(&g_barrier_start); // 待機中のスレッドを解放
+    barrier_wait(&g_barrier_start); // Release waiting threads
     
     for (int i = 0; i < NUM_THREADS; i++) pthread_join(threads[i], NULL);
     
