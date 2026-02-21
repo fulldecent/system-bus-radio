@@ -14,7 +14,7 @@ Standard implementations that hammer the memory bus continuously are quickly det
 This implementation uses a **"Pulse-Packet" strategy**:
 1.  **Burst Transmission:** It blasts the memory bus with 4 parallel threads (utilizing all P-Cores) for short durations (e.g., 20ms).
 2.  **Micro-Sleep:** It forces a tiny sleep (e.g., 0.5ms) between bursts.
-3.  **Data Pattern:** It writes alternating bit patterns (`0x55...` / `0xAA...`) to maximize electrical switching noise on the bus lines.
+
 
 This intermittent load tricks the PMU into thinking the process is behaving normally, allowing sustained high-power transmission without throttling.
 
